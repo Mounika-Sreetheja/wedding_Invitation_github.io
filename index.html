@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mounika &amp; Sreetheja | Wedding Invitation</title>
+  <meta name="description" content="Friday, 4th December 2026. Sumuhurtham 8:01 PM. Alapati Ganga Bhavani Function Hall, Jangareddygudem, Andhra Pradesh." />
+  <meta name="theme-color" content="#FAF5EB" />
+
+  <!-- Link preview (WhatsApp / social). Replace the two URLs below with your real GitHub Pages address, and add share.jpg (1200x630) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mounika &amp; Sreetheja | Wedding Invitation" />
+  <meta property="og:description" content="Friday, 4th December 2026. Sumuhurtham 8:01 PM. Alapati Ganga Bhavani Function Hall, Jangareddygudem." />
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/" />
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='12' cy='16' r='8' fill='none' stroke='%23D4AF37' stroke-width='2.6'/%3E%3Ccircle cx='20' cy='16' r='8' fill='none' stroke='%23801824' stroke-width='2.6'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add("js")</script>
+
+  <style>
+    :root {
+      --cream: #FAF5EB;
+      --paper: #F3EAD6;
+      --paper-deep: #E9DCBC;
+      --green: #1E4620;
+      --maroon: #801824;
+      --maroon-deep: #63111B;
+      --gold: #9E7B2F;
+      --gold-light: #D4AF37;
+      --gold-soft: #E3C777;
+      --ink: #2C241E;
+      --ink-soft: #6B5546;
+      --pink: #E9A3B6;
+
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --display: 'Cinzel', Georgia, serif;
+      --sans: 'Montserrat', Arial, sans-serif;
+
+      --scallop: 26px;
+      --pad: 28px;
+      --cut-shadow: drop-shadow(0 2px 1px rgba(70,40,15,.18)) drop-shadow(0 10px 14px rgba(70,40,15,.14));
+      --ease-paper: cubic-bezier(.22, 1, .36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    html.lenis, html.lenis body { height: auto; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      line-height: 1.55;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    p, h1, h2, h3 { margin: 0; }
+    h1, h2 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    .cut { filter: var(--cut-shadow); }
+
+    /* ---------- Page frame ---------- */
+    .wrapper {
+      max-width: 540px;
+      margin: 0 auto;
+      position: relative;
+      background: var(--cream);
+      box-shadow: 0 0 60px rgba(158,123,47,.14);
+      overflow: hidden;
+    }
+
+    /* Paper grain + petals */
+    .grain {
+      position: fixed; inset: 0; z-index: 50; pointer-events: none;
+      opacity: .45; mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .42 0 0 0 0 .26 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .petals { position: fixed; inset: 0; z-index: 40; pointer-events: none; overflow: hidden; }
+    .petal {
+      position: absolute; top: -6vh;
+      border-radius: 150% 0 150% 0;
+      background: radial-gradient(circle at 30% 30%, #f9c5d1, #e88ca5);
+      box-shadow: 0 2px 3px rgba(90,40,30,.12);
+      opacity: 0;
+      animation: fall linear infinite;
+    }
+    .petal:nth-child(3n) { background: linear-gradient(135deg, #fffaf0, #f1e4c8); }
+    @keyframes fall {
+      0%   { transform: translate3d(0,0,0) rotate(0deg); opacity: 0; }
+      10%  { opacity: .55; }
+      88%  { opacity: .55; }
+      100% { transform: translate3d(var(--drift,40px),112vh,0) rotate(var(--spin,420deg)); opacity: 0; }
+    }
+
+    /* ---------- Shared type ---------- */
+    .eyebrow {
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: .72rem;
+      line-height: 1.4;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-right: -.28em;
+    }
+    .eyebrow--light { color: var(--gold-soft); }
+
+    /* ---------- Opening gate ---------- */
+    .gate { display: none; }
+    .js .gate {
+      position: fixed; inset: 0; z-index: 45;
+      display: grid; place-items: center;
+      padding: 24px var(--pad) calc(24px + env(safe-area-inset-bottom));
+      overflow: hidden; text-align: center;
+      background:
+        radial-gradient(90% 60% at 50% 45%, #fffaf0 0%, transparent 75%),
+        linear-gradient(var(--cream), var(--paper));
+      transition: transform 1.1s cubic-bezier(.7,0,.2,1);
+    }
+    .gate.is-leaving { transform: translateY(-104%); pointer-events: none; }
+    .gate::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 22px;
+      background: radial-gradient(circle 12px at 50% 100%, var(--gold-light) 98%, transparent 100%) 0 0 / 24px 22px repeat-x;
+      opacity: .55;
+    }
+    .gate__toran { position: absolute; top: -2px; left: 50%; width: min(100%, 540px); translate: -50% 0; }
+    .gate__inner { position: relative; display: flex; flex-direction: column; align-items: center; margin-top: 12vh; }
+    .gate__emblem { width: 84px; margin-bottom: 14px; }
+    .gate__invite { margin-top: 4px; }
+    .gate__names {
+      font-family: var(--serif); font-style: italic; font-weight: 600;
+      font-size: clamp(2.3rem, 11vw, 3.4rem); line-height: 1.12;
+      color: var(--maroon); margin-top: 8px;
+    }
+    .gate__names span { font-family: var(--display); font-style: normal; font-weight: 500; font-size: .55em; color: var(--gold); padding: 0 .15em; }
+    .gate__date { font-family: var(--display); font-size: .95rem; font-weight: 600; letter-spacing: .35em; color: var(--green); margin: 8px -.35em 30px 0; }
+    .gate__open {
+      font: 600 .74rem/1 var(--sans); letter-spacing: .24em; text-transform: uppercase;
+      padding: 18px 34px; min-height: 54px; border: 0; border-radius: 999px;
+      background: var(--maroon); color: #FFFDF9; cursor: pointer;
+      box-shadow: 0 0 0 5px rgba(128,24,36,.14), 0 5px 0 var(--maroon-deep), 0 14px 26px rgba(90,20,30,.28);
+      transition: translate .3s var(--ease-paper);
+      animation: beckon 2.4s ease-in-out infinite;
+    }
+    .gate__open:active { translate: 0 3px; }
+    .gate__open:focus-visible { outline: 2px solid var(--maroon); outline-offset: 6px; }
+    @keyframes beckon {
+      0%,100% { box-shadow: 0 0 0 5px rgba(128,24,36,.14), 0 5px 0 var(--maroon-deep), 0 14px 26px rgba(90,20,30,.28); }
+      50%     { box-shadow: 0 0 0 12px rgba(128,24,36,.06), 0 5px 0 var(--maroon-deep), 0 14px 26px rgba(90,20,30,.28); }
+    }
+    .gate__note { display: flex; align-items: center; gap: 8px; margin-top: 18px; font-family: var(--sans); font-size: .62rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-soft); }
+    .gate__note svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    html.gate-lock, html.gate-lock body { overflow: hidden; }
+    html.gate-lock .music { visibility: hidden; }
+
+    /* ---------- 1. Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex; flex-direction: column; align-items: center;
+      padding: calc(min(100vw, 540px) * .38) var(--pad) 18px;
+      text-align: center;
+      background: radial-gradient(120% 70% at 50% 0%, #fffaf0 0%, transparent 70%), var(--cream);
+    }
+    .toran {
+      position: absolute; top: -2px; left: 0; width: 100%;
+      z-index: 3; filter: var(--cut-shadow); pointer-events: none;
+    }
+    .garland { position: absolute; top: 0; z-index: 2; width: calc(min(54svh, 480px) * .15); transform-origin: 50% 0; animation: sway 7s ease-in-out infinite alternate; pointer-events: none; }
+    .garland img { width: 100%; filter: var(--cut-shadow); }
+    .garland--left { left: 4px; }
+    .garland--right { right: 4px; animation-delay: -3.5s; animation-duration: 8s; }
+    @keyframes sway { from { rotate: -1.6deg; } to { rotate: 1.6deg; } }
+    .hero__inner {
+      padding-inline: 50px;
+      position: relative; z-index: 4; flex: 1; width: 100%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+    .emblem { width: 76px; height: 76px; object-fit: contain; margin-bottom: 12px; filter: var(--cut-shadow); }
+    .mantra { margin-bottom: 16px; font-size: .68rem; letter-spacing: .24em; font-weight: 600; }
+    .hero__title { font-weight: 500; font-size: clamp(2.05rem, 9.4vw, 2.8rem); line-height: 1.05; letter-spacing: -.01em; }
+    .hero__title .line { display: block; overflow: hidden; padding-bottom: .12em; }
+    .hero__title .line > span { display: block; }
+    .hero__title .l1 { color: var(--green); }
+    .hero__title .l2 { color: var(--maroon); }
+    .hero__title .l3 { color: var(--gold); font-style: italic; font-weight: 400; }
+    .hero__hands { width: 100%; display: flex; justify-content: center; margin: 14px 0 6px; }
+    .hero__hands img {
+      width: 220px; max-width: 62vw;
+      filter: drop-shadow(0 12px 18px rgba(0,0,0,.1));
+      animation: float 6s ease-in-out infinite alternate;
+    }
+    @keyframes float { from { translate: 0 -5px; } to { translate: 0 5px; } }
+
+    .scroll-cue {
+      position: relative; z-index: 5; flex: none;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      margin-top: 8px; padding: 6px 12px 0 calc(12px + .32em);
+      font-family: var(--sans); font-size: .66rem; font-weight: 600; letter-spacing: .32em;
+      color: var(--maroon); text-decoration: none;
+    }
+    .scroll-cue i { width: 1px; height: 32px; background: var(--gold); transform-origin: 50% 0; animation: cue 2.2s ease-in-out infinite; }
+    @keyframes cue { 0% { scale: 1 0; } 50% { scale: 1 1; } 100% { scale: 1 0; transform-origin: 50% 100%; } }
+
+    /* ---------- 2. Invite (couple + parents) ---------- */
+    .invite {
+      position: relative;
+      padding: 56px var(--pad) 0;
+      text-align: center;
+      background: linear-gradient(var(--cream), var(--paper));
+    }
+    .invite { overflow: hidden; }
+    .arch { position: relative; width: min(90vw, 380px); margin: 0 auto 22px; aspect-ratio: 912 / 1600; }
+    .arch__frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; z-index: 2; }
+    .arch__window { position: absolute; left: 28%; right: 28%; top: 28%; bottom: 9%; border-radius: 46% 46% 4% 4% / 30% 30% 2% 2%; overflow: hidden; z-index: 0; background: radial-gradient(120% 70% at 50% 100%, #2a1838 0%, #0d0a1f 55%, #000 100%); box-shadow: inset 0 0 28px rgba(212,175,55,.35); }
+    .arch__window::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 45% at 50% 62%, rgba(212,175,55,.28), transparent 70%); z-index: 1; pointer-events: none; }
+    .arch__window img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; display: block; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14%); mask-image: linear-gradient(to bottom, transparent 0, #000 14%); }
+    .arch__window::after { content: ""; position: absolute; inset: 12% 0 36% 0; z-index: 1; pointer-events: none; opacity: .9; animation: twinkle 3.5s ease-in-out infinite alternate;
+      background:
+        radial-gradient(1.5px 1.5px at 18% 14%, #fff 50%, transparent 55%), radial-gradient(1px 1px at 32% 30%, #fff 50%, transparent 55%),
+        radial-gradient(1.5px 1.5px at 74% 22%, #fff 50%, transparent 55%), radial-gradient(1px 1px at 55% 9%, #f4dca6 50%, transparent 55%),
+        radial-gradient(1px 1px at 84% 44%, #fff 50%, transparent 55%), radial-gradient(1.5px 1.5px at 10% 48%, #f4dca6 50%, transparent 55%),
+        radial-gradient(1px 1px at 44% 52%, #fff 50%, transparent 55%), radial-gradient(1px 1px at 66% 62%, #fff 50%, transparent 55%); }
+    @keyframes twinkle { from { opacity: .45; } to { opacity: 1; } }
+    .arch__moon { position: absolute; z-index: 1; left: 56%; top: 22%; width: 22%; aspect-ratio: 1; border-radius: 50%; box-shadow: inset -.45em 0 0 0 #f4dca6; filter: drop-shadow(0 0 6px rgba(244,220,166,.55)); font-size: clamp(8px, 2.4vw, 14px); pointer-events: none; }
+    .photo { position: relative; width: min(100%, 440px); margin: 36px auto 0; z-index: 2; }
+    .photo__bg { position: absolute; left: 50%; top: 14%; width: 92%; aspect-ratio: 1; translate: -50% 0; border-radius: 50%; background: radial-gradient(circle at 50% 45%, #fff6dd 0%, #f4dca6 55%, #e6c27e 100%); box-shadow: 0 0 0 6px var(--cream), 0 0 0 7px var(--gold-light), 8px 10px 0 2px var(--gold-soft); }
+    .photo img { position: relative; display: block; width: 100%; height: auto; filter: drop-shadow(0 12px 18px rgba(70,40,15,.25)); }
+    .photo__cap { position: absolute; left: 0; right: 0; top: 0; text-align: center; }
+    .float-lotus { position: absolute; z-index: 1; pointer-events: none; }
+    .float-lotus--a { width: 78px; left: -26px; top: 22px; rotate: 14deg; z-index: 0; }
+    .float-lotus--b { width: 66px; right: -24px; top: 26px; rotate: -18deg; z-index: 0; }
+    .invite > :not(.float-lotus):not(.arch) { position: relative; z-index: 2; }
+    .divider { display: block; width: 120px; height: 1px; margin: 0 auto 28px; background: linear-gradient(90deg, transparent, var(--gold-light), transparent); position: relative; }
+    .divider::after { content: ""; position: absolute; left: 50%; top: 50%; width: 9px; height: 9px; background: var(--gold-light); translate: -50% -50%; rotate: 45deg; }
+    .lede { font-size: 1.3rem; font-style: italic; line-height: 1.4; color: var(--ink-soft); max-width: 22em; margin: 0 auto; }
+
+    .person { margin: 26px 0 0; }
+    .person__name { font-size: clamp(2.5rem, 12vw, 3.3rem); font-weight: 600; font-style: italic; color: var(--maroon); line-height: 1.12; padding-inline: .1em; }
+    .person__label { font-family: var(--sans); font-size: .62rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-top: 6px; font-weight: 500; }
+    .person__parents { font-size: 1.25rem; font-weight: 600; color: var(--green); margin-top: 2px; line-height: 1.35; }
+    .amp { font-family: var(--display); font-size: 1.8rem; color: var(--gold-light); margin: 14px 0 0; line-height: 1; }
+
+    /* ---------- Scalloped paper edges ---------- */
+    .details, .closing { position: relative; }
+    .edge {
+      --o: 0px; --x: 50%;
+      position: absolute; left: 0; right: 0;
+      top: calc((var(--scallop) + var(--o)) * -1 + 1px);
+      height: calc(var(--scallop) + var(--o));
+      -webkit-mask-image: radial-gradient(circle var(--scallop) at 50% 100%, #000 98%, transparent 100%), linear-gradient(#000,#000);
+              mask-image: radial-gradient(circle var(--scallop) at 50% 100%, #000 98%, transparent 100%), linear-gradient(#000,#000);
+      -webkit-mask-size: calc(var(--scallop) * 2) var(--scallop), 100% calc(100% - var(--scallop) + 1px);
+              mask-size: calc(var(--scallop) * 2) var(--scallop), 100% calc(100% - var(--scallop) + 1px);
+      -webkit-mask-repeat: repeat-x, no-repeat; mask-repeat: repeat-x, no-repeat;
+      -webkit-mask-position: var(--x) 0, 0 100%; mask-position: var(--x) 0, 0 100%;
+      filter: drop-shadow(0 -3px 3px rgba(60,30,10,.22));
+      pointer-events: none;
+    }
+    .edge:nth-of-type(1) { --o: 26px; }
+    .edge:nth-of-type(2) { --o: 13px; --x: calc(50% + var(--scallop)); }
+    .edge--gold   { background: var(--gold-light); }
+    .edge--green  { background: var(--green); }
+    .edge--maroon { background: var(--maroon); }
+    .edge--pink   { background: var(--pink); }
+    .edge--cream  { background: var(--cream); }
+
+    /* ---------- 3. Details ---------- */
+    .details {
+      background: radial-gradient(90% 60% at 50% 0%, #9a2a3b 0%, transparent 70%), var(--maroon);
+      color: var(--cream);
+      padding: 64px var(--pad) 120px;
+      text-align: center;
+    }
+    .details__title { font-weight: 400; font-style: italic; font-size: 2rem; line-height: 1.15; margin: 10px auto 34px; max-width: 14em; }
+    .cards { display: grid; gap: 26px; }
+    .card {
+      position: relative;
+      background: var(--cream); color: var(--ink);
+      padding: 28px 20px 26px;
+      border-radius: 4px 4px 120px 120px / 4px 4px 34px 34px;
+      box-shadow:
+        0 0 0 6px var(--cream), 0 0 0 7px var(--gold-light),
+        8px 10px 0 2px var(--gold-soft), 14px 18px 0 2px var(--green),
+        16px 26px 26px rgba(30,5,10,.45);
+      margin: 0 16px 14px 6px;
+    }
+    .card__icon { width: 30px; height: 30px; margin: 0 auto 10px; fill: none; stroke: var(--gold); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+    .card__label { font-family: var(--sans); font-size: .66rem; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); margin-right: -.28em; }
+    .card__big { font-family: var(--display); font-size: 1.7rem; font-weight: 700; color: var(--maroon); line-height: 1.12; margin-top: .25em; letter-spacing: .04em; }
+    .card__big small { font-family: var(--sans); font-size: .36em; letter-spacing: .2em; font-weight: 600; vertical-align: .6em; }
+    .card__big--venue { font-family: var(--serif); font-size: 1.85rem; font-weight: 600; letter-spacing: 0; color: var(--green); }
+    .card__text { font-size: 1.2rem; color: var(--ink-soft); margin-top: .2em; }
+
+    .countdown {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      margin: 44px auto 0; padding-block: 18px;
+      border-block: 1px solid rgba(227,199,119,.45);
+    }
+    .countdown div + div { border-left: 1px solid rgba(227,199,119,.3); }
+    .countdown b { display: block; font-family: var(--display); font-weight: 600; font-size: 1.9rem; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--cream); }
+    .countdown b.tick { animation: tick .5s var(--ease-paper); }
+    @keyframes tick { from { translate: 0 -.25em; opacity: .25; } to { translate: 0 0; opacity: 1; } }
+    .countdown span { display: block; margin-top: 6px; font-family: var(--sans); font-size: .56rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-soft); }
+
+    .actions { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 34px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      font-family: var(--sans); font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+      text-decoration: none; color: var(--cream);
+      padding: 14px 28px; min-height: 50px; min-width: 240px;
+      border: 1px solid var(--gold-soft); border-radius: 999px;
+      box-shadow: 0 4px 0 rgba(0,0,0,.18);
+      transition: translate .35s var(--ease-paper), box-shadow .35s;
+      cursor: pointer; background: transparent;
+    }
+    .btn--solid { background: var(--cream); color: var(--maroon); border-color: var(--cream); }
+    .btn:hover, .btn:focus-visible { translate: 0 -3px; box-shadow: 0 8px 0 rgba(0,0,0,.2); }
+    .btn:active { translate: 0 1px; box-shadow: 0 2px 0 rgba(0,0,0,.2); }
+    .btn:focus-visible { outline: 2px solid var(--gold-soft); outline-offset: 4px; }
+
+    /* ---------- 4. Closing ---------- */
+    .closing {
+      background: linear-gradient(var(--cream) 0%, var(--paper) 62%, var(--paper-deep) 100%);
+      padding: 80px 0 0; text-align: center;
+    }
+    .closing__text { padding-inline: var(--pad); position: relative; z-index: 3; }
+    .blessing { font-size: 1.7rem; font-style: italic; line-height: 1.3; color: var(--ink); max-width: 16em; margin: 0 auto 1em; }
+    .closing__note { font-size: 1.35rem; font-weight: 600; color: var(--maroon); margin-top: .5em; }
+    .scene { position: relative; width: 100%; margin: 26px auto 0; aspect-ratio: 1 / .86; }
+    .scene > * { position: absolute; max-width: none; }
+    .scene__plant { width: 34%; bottom: 11%; z-index: 1; transform-origin: 50% 100%; }
+    .scene__plant--left { left: -9%; }
+    .scene__plant--right { right: -9%; }
+    .scene__plant img { width: 100%; }
+    .scene__plant--right img { scale: -1 1; }
+    .scene__pooja { width: 50%; left: 25%; bottom: 61%; z-index: 2; }
+    .scene__floor { left: 0; right: 0; bottom: 0; height: 14%; background: linear-gradient(#d9bd8a, #c9a86e); box-shadow: 0 -2px 0 var(--gold-soft), 0 -10px 18px rgba(90,55,20,.16); z-index: 3; }
+    .scene__couple { width: 62%; left: 19%; bottom: 3%; z-index: 4; }
+
+    /* ---------- Footer ---------- */
+    .footer { background: var(--green); color: var(--cream); text-align: center; padding: 40px var(--pad) calc(44px + env(safe-area-inset-bottom)); }
+    .footer__names { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 2.3rem; line-height: 1.15; }
+    .footer__names span { font-family: var(--display); font-style: normal; font-weight: 500; font-size: .55em; color: var(--gold-soft); padding: 0 .2em; }
+    .footer__date { font-family: var(--display); font-size: .8rem; font-weight: 500; letter-spacing: .4em; color: var(--gold-soft); margin: 10px -.4em 0 0; }
+
+    /* ---------- Music button ---------- */
+    .music {
+      position: fixed; z-index: 60;
+      right: calc(18px + env(safe-area-inset-right)); bottom: calc(18px + env(safe-area-inset-bottom));
+      width: 54px; height: 54px; padding: 0;
+      display: grid; place-items: center;
+      border: 1.5px solid var(--gold-light); border-radius: 50%;
+      background: #FFFDF9; color: var(--maroon);
+      box-shadow: 0 6px 20px rgba(0,0,0,.14);
+      cursor: pointer; transition: transform .2s ease;
+    }
+    .music:active { transform: scale(.94); }
+    .music:focus-visible { outline: 2px solid var(--maroon); outline-offset: 4px; }
+    .bars { display: flex; align-items: flex-end; gap: 3px; height: 18px; }
+    .bars i { width: 3px; border-radius: 2px; background: currentColor; height: 6px; transform-origin: 50% 100%; }
+    .bars i:nth-child(1) { height: 14px; }
+    .bars i:nth-child(2) { height: 9px; }
+    .bars i:nth-child(3) { height: 6px; }
+    .music[aria-pressed="true"] .bars i { height: 16px; animation: bars 1s ease-in-out infinite alternate; }
+    .music[aria-pressed="true"] .bars i:nth-child(2) { animation-delay: -.4s; animation-duration: .8s; }
+    .music[aria-pressed="true"] .bars i:nth-child(3) { animation-delay: -.7s; animation-duration: 1.2s; }
+    @keyframes bars { from { scale: 1 .3; } to { scale: 1 1; } }
+
+    /* ---------- Scroll reveal (fallback when GSAP is unavailable) ---------- */
+    .js [data-reveal], .js [data-card] { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
+    .js [data-reveal].in, .js [data-card].in { opacity: 1; transform: none; }
+    .gsap-on [data-reveal], .gsap-on [data-card] { transition: none; }
+
+
+    /* ---------- Web / desktop layout ---------- */
+    @media (min-width: 800px) {
+      :root { --pad: 56px; --scallop: 34px; }
+      body { background: radial-gradient(80% 60% at 50% 0%, #F2E8D2 0%, #E6D8B8 100%) fixed; font-size: 1.3rem; }
+      .wrapper { max-width: 900px; margin-block: 0; }
+
+      .gate__toran { width: min(100%, 700px); }
+      .gate__emblem { width: 100px; }
+      .gate__names { font-size: 4.4rem; }
+
+      .hero { padding-top: 232px; padding-bottom: 20px; }
+      .toran { width: 580px; left: 50%; translate: -50% 0; }
+      .garland--left { left: 28px; } .garland--right { right: 28px; }
+      .hero__inner { padding-inline: 90px; }
+      .emblem { width: 92px; height: 92px; }
+      .mantra { font-size: .8rem; }
+      .hero__title { font-size: 3.2rem; }
+      .hero__hands img { width: auto; max-width: none; height: min(30svh, 300px); }
+
+      .invite { padding-top: 80px; }
+      .arch { width: 380px; }
+      .lede { font-size: 1.55rem; max-width: 24em; }
+      .person__name { font-size: 4.2rem; }
+      .person__label { font-size: .72rem; }
+      .person__parents { font-size: 1.6rem; }
+      .amp { font-size: 2.4rem; }
+      .photo { width: 480px; margin-top: 56px; }
+      .float-lotus--a { width: 150px; left: 3%; top: -30px; }
+      .float-lotus--b { width: 130px; right: 4%; top: -20px; }
+
+      .details { padding-top: 90px; padding-bottom: 150px; }
+      .details__title { font-size: 2.9rem; margin-bottom: 52px; }
+      .cards { grid-template-columns: repeat(3, 1fr); gap: 34px; align-items: start; }
+      .card { margin: 0 14px 18px 0; padding: 36px 18px 34px; }
+      .card:nth-child(2) { translate: 0 -22px; }
+      .card__big { font-size: 1.9rem; }
+      .card__big--venue { font-size: 1.7rem; }
+      .card__text { font-size: 1.15rem; }
+      .countdown { max-width: 620px; margin-top: 64px; }
+      .countdown b { font-size: 2.8rem; }
+      .countdown span { font-size: .66rem; }
+      .actions { flex-direction: row; justify-content: center; gap: 18px; margin-top: 44px; }
+      .btn { min-width: 230px; font-size: .78rem; }
+
+      .closing { padding-top: 110px; }
+      .blessing { font-size: 2.4rem; max-width: 18em; }
+      .closing__note { font-size: 1.8rem; }
+      .scene { aspect-ratio: 2.1 / 1; }
+      .scene__plant { width: 20%; bottom: 11%; }
+      .scene__plant--left { left: 3%; } .scene__plant--right { right: 3%; }
+      .scene__pooja { width: 26%; left: 37%; bottom: 62%; }
+      .scene__couple { width: 33%; left: 33.5%; }
+      .footer { padding-block: 56px; }
+      .footer__names { font-size: 3.2rem; }
+      .music { right: 28px; bottom: 28px; }
+    }
+    @media (min-width: 800px) and (max-height: 700px) { .hero__hands img { height: 190px; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .petals, .grain { display: none; }
+      .scroll-cue i, .hero__hands img, .garland, .gate__open, .arch__window::after, .countdown b.tick, .bars i { animation: none !important; }
+      .js [data-reveal], .js [data-card] { opacity: 1; transform: none; transition: none; }
+      .gate { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Opening screen: the tap on "Open Invitation" lets the music play -->
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <img class="gate__toran" src="toran.png" alt="" onerror="this.style.display='none'" />
+    <div class="gate__inner">
+      <img class="gate__emblem" src="ganesha.png" alt="" onerror="this.style.display='none'" />
+      <p class="eyebrow gate__invite">You are invited to the wedding of</p>
+      <h2 class="gate__names" id="gate-title">Mounika <span>&amp;</span> Sreetheja</h2>
+      <p class="gate__date">04 . 12 . 2026</p>
+      <button class="gate__open" id="gate-open" type="button">Open Invitation</button>
+      <p class="gate__note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+        Best with sound on
+      </p>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+  <button class="music" id="music-toggle" type="button" aria-pressed="false" aria-label="Play music">
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+
+  <div class="wrapper">
+
+    <!-- 1. HERO -->
+    <header class="hero" id="top">
+      <img class="toran" src="toran.png" alt="Mango leaf and marigold toran" onerror="this.style.display='none'" />
+
+      <div class="garland garland--left" aria-hidden="true"><img src="garland.png" alt="" onerror="this.style.display='none'" /></div>
+      <div class="garland garland--right" aria-hidden="true"><img src="garland.png" alt="" onerror="this.style.display='none'" /></div>
+
+      <div class="hero__inner">
+        <img class="emblem" src="ganesha.png" alt="Lord Ganesha" onerror="this.style.display='none'" />
+        <p class="eyebrow mantra">OM SRI GANESHAYA NAMAHA</p>
+        <h1 class="hero__title">
+          <span class="line l1"><span>Two Hearts,</span></span>
+          <span class="line l2"><span>One Beautiful</span></span>
+          <span class="line l3"><span>Beginning</span></span>
+        </h1>
+        <div class="hero__hands" data-speed="-6">
+          <img src="hands.png" alt="The bride and groom's hands" onerror="this.style.display='none'" />
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#invite" aria-label="Scroll to the invitation"><span>SCROLL</span><i></i></a>
+    </header>
+
+    <main>
+      <!-- 2. INVITE -->
+      <section class="invite" id="invite">
+        <div class="arch" aria-hidden="true">
+          <div class="arch__window"><i class="arch__moon"></i><img src="shiva-parvati.png" alt="Lord Shiva and Goddess Parvati" onerror="this.style.display='none'" /></div>
+          <img class="arch__frame cut" src="arch.png" alt="" onerror="this.style.display='none'" />
+        </div>
+        <span class="divider" data-reveal aria-hidden="true"></span>
+        <p class="lede" data-reveal>With the blessings of the Almighty and our beloved elders, we joyfully invite you to grace the wedding of</p>
+
+        <div class="person" data-reveal>
+          <h2 class="person__name">Mounika</h2>
+          <p class="person__label">Daughter of</p>
+          <p class="person__parents">Sri Udataneni Pullarao &amp; Smt. Dhanalakshmi</p>
+        </div>
+
+        <p class="amp" data-reveal>&amp;<img class="float-lotus float-lotus--a cut" src="lotus.png" alt="" aria-hidden="true" data-speed="14" onerror="this.style.display='none'" /><img class="float-lotus float-lotus--b cut" src="lotus.png" alt="" aria-hidden="true" data-speed="-10" onerror="this.style.display='none'" /></p>
+
+        <div class="person" data-reveal>
+          <h2 class="person__name">Sreetheja</h2>
+          <p class="person__label">Son of</p>
+          <p class="person__parents">Sri Gorthi Mahesh Chowdary &amp; Smt. Vijaya Lakshmi</p>
+        </div>
+        <div class="photo" data-reveal>
+          <div class="photo__bg" aria-hidden="true"></div>
+          <img src="couple-photo.png" alt="Mounika and Sreetheja" onerror="this.parentNode.style.display='none'" />
+        </div>
+
+      </section>
+
+      <!-- 3. DETAILS -->
+      <section class="details" id="details">
+        <div class="edge edge--gold" aria-hidden="true"></div>
+        <div class="edge edge--green" aria-hidden="true"></div>
+        <div class="edge edge--maroon" aria-hidden="true"></div>
+
+        <p class="eyebrow eyebrow--light" data-reveal>Save the Date</p>
+        <h2 class="details__title" data-reveal>Join us as two families become one</h2>
+
+        <div class="cards">
+          <article class="card" data-card>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3.5 9h17M5 4.5h14A1.5 1.5 0 0 1 20.5 6v13A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5Z"/><path d="M8 13h.01M12 13h.01M16 13h.01M8 16.5h.01M12 16.5h.01"/></svg>
+            <p class="card__label">The Day</p>
+            <p class="card__big">04 . 12 . 2026</p>
+            <p class="card__text">Friday, 4th December</p>
+          </article>
+
+          <article class="card" data-card>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg>
+            <p class="card__label">Sumuhurtham</p>
+            <p class="card__big">8:01 <small>PM IST</small></p>
+            <p class="card__text">The auspicious moment</p>
+          </article>
+
+          <article class="card" data-card>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <p class="card__label">The Venue</p>
+            <p class="card__big card__big--venue">Alapati Ganga Bhavani Function Hall</p>
+            <p class="card__text">Jangareddygudem, Andhra Pradesh</p>
+          </article>
+        </div>
+
+        <div class="countdown" data-reveal role="timer" aria-label="Countdown to the wedding">
+          <div><b id="cd-d">00</b><span>Days</span></div>
+          <div><b id="cd-h">00</b><span>Hours</span></div>
+          <div><b id="cd-m">00</b><span>Minutes</span></div>
+          <div><b id="cd-s">00</b><span>Seconds</span></div>
+        </div>
+
+        <div class="actions" data-reveal>
+          <a class="btn btn--solid" id="add-cal" target="_blank" rel="noopener"
+             href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mounika+%26+Sreetheja+Wedding&dates=20261204T143100Z/20261204T173000Z&ctz=Asia/Kolkata&details=Sumuhurtham+at+8:01+PM+IST.+We+cordially+invite+you+to+bless+the+couple.&location=Alapati+Ganga+Bhavani+Function+Hall,+Jangareddygudem,+Andhra+Pradesh">Add to Calendar</a>
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Alapati+Ganga+Bhavani+Function+Hall+Jangareddygudem+Andhra+Pradesh">Open in Maps</a>
+        </div>
+      </section>
+
+      <!-- 4. CLOSING -->
+      <section class="closing" id="blessings">
+        <div class="edge edge--gold" aria-hidden="true"></div>
+        <div class="edge edge--pink" aria-hidden="true"></div>
+        <div class="edge edge--cream" aria-hidden="true"></div>
+
+        <div class="closing__text">
+          <span class="divider" data-reveal aria-hidden="true"></span>
+          <p class="blessing" data-reveal>Your presence and blessings will make this special day even more memorable.</p>
+          <p class="eyebrow" data-reveal>With love</p>
+          <p class="closing__note" data-reveal>The families of Mounika &amp; Sreetheja</p>
+        </div>
+
+        <div class="scene" aria-hidden="true">
+          <div class="scene__plant scene__plant--left"><img class="cut" src="banana.png" alt="" onerror="this.style.display='none'" /></div>
+          <div class="scene__plant scene__plant--right"><img class="cut" src="banana.png" alt="" onerror="this.style.display='none'" /></div>
+          <img class="scene__pooja cut" src="pooja.png" alt="" onerror="this.style.display='none'" />
+          <div class="scene__floor"></div>
+          <img class="scene__couple cut" src="couple.png" alt="" onerror="this.style.display='none'" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__names">Mounika <span>&amp;</span> Sreetheja</p>
+      <p class="footer__date">04 . 12 . 2026</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+  <script defer>
+  (function () {
+    "use strict";
+
+    const EVENT = {
+      title: "Mounika & Sreetheja Wedding",
+      start: "2026-12-04T20:01:00+05:30",
+      end: "2026-12-04T23:00:00+05:30",
+      place: "Alapati Ganga Bhavani Function Hall, Jangareddygudem, Andhra Pradesh",
+      details: "Sumuhurtham at 8:01 PM IST. We cordially invite you to bless the couple."
+    };
+    const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const $ = (id) => document.getElementById(id);
+
+    /* ---------- Countdown ---------- */
+    (function countdown() {
+      const target = new Date(EVENT.start).getTime();
+      const el = { d: $("cd-d"), h: $("cd-h"), m: $("cd-m"), s: $("cd-s") };
+      const pad = (n) => String(n).padStart(2, "0");
+      const set = (node, v) => {
+        if (node.textContent === v) return;
+        node.textContent = v;
+        if (REDUCE) return;
+        node.classList.remove("tick"); void node.offsetWidth; node.classList.add("tick");
+      };
+      function tick() {
+        const s = Math.floor(Math.max(0, target - Date.now()) / 1000);
+        set(el.d, pad(Math.floor(s / 86400)));
+        set(el.h, pad(Math.floor((s % 86400) / 3600)));
+        set(el.m, pad(Math.floor((s % 3600) / 60)));
+        set(el.s, pad(s % 60));
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+
+    /* ---------- Add to calendar: .ics on iPhone/iPad, Google Calendar elsewhere ---------- */
+    (function calendar() {
+      const btn = $("add-cal");
+      const ua = navigator.userAgent;
+      const ios = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      if (!ios) return;
+      const f = (d) => new Date(d).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+      const ics = [
+        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Wedding Invitation//EN", "BEGIN:VEVENT",
+        "UID:mounika-sreetheja-20261204@invitation",
+        "DTSTAMP:" + f(Date.now()), "DTSTART:" + f(EVENT.start), "DTEND:" + f(EVENT.end),
+        "SUMMARY:" + EVENT.title, "LOCATION:" + EVENT.place.replace(/,/g, "\\,"),
+        "DESCRIPTION:" + EVENT.details.replace(/,/g, "\\,"), "END:VEVENT", "END:VCALENDAR"
+      ].join("\r\n");
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
+        const a = document.createElement("a");
+        a.href = url; a.download = "mounika-sreetheja-wedding.ics";
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+      });
+      btn.removeAttribute("target");
+    })();
+
+    /* ---------- Petals ---------- */
+    (function petals() {
+      const host = $("petals");
+      if (!host || REDUCE) return;
+      const count = innerWidth < 720 ? 9 : 14;
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement("i");
+        const size = 10 + Math.random() * 10;
+        p.className = "petal";
+        p.style.cssText =
+          `left:${Math.random() * 100}%;width:${size}px;height:${size * .7}px;` +
+          `--drift:${(Math.random() * 2 - 1) * 120}px;--spin:${(Math.random() * 2 - 1) * 540}deg;` +
+          `animation-duration:${12 + Math.random() * 10}s;animation-delay:${-Math.random() * 20}s;`;
+        host.appendChild(p);
+      }
+    })();
+
+    /* ---------- Music ---------- */
+    const MUSIC = (function music() {
+      const audio = $("bgm"), btn = $("music-toggle");
+      const VOLUME = 0.5;
+      const store = {
+        get() { try { return localStorage.getItem("ms-music"); } catch (e) { return null; } },
+        set(v) { try { localStorage.setItem("ms-music", v); } catch (e) {} }
+      };
+      let fade;
+      const ramp = (to, ms, done) => {
+        cancelAnimationFrame(fade);
+        const from = audio.volume, t0 = performance.now();
+        const step = (t) => {
+          const k = Math.min(1, (t - t0) / ms);
+          audio.volume = from + (to - from) * k;
+          if (k < 1) fade = requestAnimationFrame(step); else if (done) done();
+        };
+        fade = requestAnimationFrame(step);
+      };
+      const show = (on) => {
+        btn.setAttribute("aria-pressed", String(on));
+        btn.setAttribute("aria-label", on ? "Pause music" : "Play music");
+      };
+      const play = () => {
+        if (!audio.paused) return Promise.resolve();
+        audio.volume = 0;
+        return audio.play().then(() => { show(true); ramp(VOLUME, 3000); }).catch(() => show(false));
+      };
+      const pause = () => { show(false); ramp(0, 500, () => audio.pause()); };
+      const wanted = () => store.get() !== "off";
+
+      btn.addEventListener("click", () => {
+        if (audio.paused) { store.set("on"); play(); } else { store.set("off"); pause(); }
+      });
+
+      /* Fallback: first tap anywhere starts the music (browsers require a gesture) */
+      const events = ["pointerup", "touchend", "click", "keydown"];
+      const firstTap = (e) => {
+        events.forEach((ev) => removeEventListener(ev, firstTap, true));
+        if (btn.contains(e.target) || !wanted()) return;
+        play();
+      };
+      events.forEach((ev) => addEventListener(ev, firstTap, true));
+
+      /* Quiet while the tab is hidden */
+      let was = false;
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) { was = !audio.paused; audio.pause(); }
+        else if (was) audio.play().catch(() => {});
+      });
+      return { play, wanted };
+    })();
+
+    /* ---------- Opening gate ---------- */
+    const GATE = (function gate() {
+      const el = $("gate"), open = $("gate-open");
+      let done; const opened = new Promise((r) => (done = r));
+      if (!el || !open) { done(); return { opened }; }
+      document.documentElement.classList.add("gate-lock");
+      open.focus({ preventScroll: true });
+      open.addEventListener("click", () => {
+        if (MUSIC.wanted()) MUSIC.play();
+        document.documentElement.classList.remove("gate-lock");
+        el.classList.add("is-leaving");
+        const finish = () => { el.remove(); done(); };
+        if (REDUCE) finish();
+        else { el.addEventListener("transitionend", finish, { once: true }); setTimeout(finish, 1500); }
+        setTimeout(done, REDUCE ? 0 : 500);
+      }, { once: true });
+      return { opened };
+    })();
+
+    /* ---------- Scroll reveal fallback (used when GSAP is missing) ---------- */
+    function startFallbackReveal() {
+      const targets = document.querySelectorAll("[data-reveal], [data-card]");
+      if (!("IntersectionObserver" in window)) { targets.forEach((t) => t.classList.add("in")); return; }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+      }, { threshold: 0.15 });
+      targets.forEach((t) => io.observe(t));
+    }
+
+    /* ---------- Motion ---------- */
+    window.addEventListener("load", () => {
+      if (REDUCE) return;
+      if (!window.gsap || !window.ScrollTrigger) { startFallbackReveal(); return; }
+
+      document.documentElement.classList.add("gsap-on");
+      gsap.registerPlugin(ScrollTrigger);
+
+      /* Smooth scrolling */
+      if (window.Lenis) {
+        const lenis = new Lenis({ duration: 1.2, smoothWheel: true });
+        if (document.documentElement.classList.contains("gate-lock")) { lenis.stop(); GATE.opened.then(() => lenis.start()); }
+        lenis.on("scroll", ScrollTrigger.update);
+        gsap.ticker.add((t) => lenis.raf(t * 1000));
+        gsap.ticker.lagSmoothing(0);
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+          const id = a.getAttribute("href");
+          if (id.length < 2) return;
+          a.addEventListener("click", (e) => { e.preventDefault(); lenis.scrollTo(id, { duration: 1.6 }); });
+        });
+      }
+
+      gsap.set("[data-reveal], [data-card]", { autoAlpha: 0 });
+
+      /* Hero entrance: paper layers drop and settle */
+      const intro = gsap.timeline({ defaults: { ease: "power3.out" }, delay: 0.15, paused: true });
+      GATE.opened.then(() => intro.play());
+      intro
+        .from(".toran", { yPercent: -110, duration: 1.3, ease: "back.out(1.1)" })
+        .from(".garland", { yPercent: -105, duration: 1.4, stagger: 0.12, ease: "back.out(1.2)" }, "-=1.0")
+        .from(".emblem", { scale: 0.4, rotation: -25, autoAlpha: 0, duration: 1.0, ease: "back.out(1.6)" }, "-=0.9")
+        .from(".mantra", { autoAlpha: 0, letterSpacing: "0.55em", duration: 1.1 }, "-=0.6")
+        .from(".hero__title .line > span", { yPercent: 115, rotation: 2, duration: 1.0, stagger: 0.14 }, "-=0.8")
+        .from(".hero__hands img", { autoAlpha: 0, scale: 0.86, y: 40, rotation: -6, duration: 1.3 }, "-=0.7")
+        .from(".scroll-cue", { autoAlpha: 0, duration: 0.8 }, "-=0.3");
+
+      gsap.to(".scroll-cue", { autoAlpha: 0, scrollTrigger: { trigger: ".hero", start: "top top", end: "15% top", scrub: 0.6 } });
+
+      /* Parallax via data-speed */
+      const mobile = matchMedia("(max-width: 719px)").matches;
+      gsap.utils.toArray("[data-speed]").forEach((el) => {
+        const speed = parseFloat(el.dataset.speed) * (mobile ? 0.5 : 1);
+        gsap.fromTo(el, { yPercent: -speed }, {
+          yPercent: speed, ease: "none",
+          scrollTrigger: { trigger: el.closest("section, header"), start: "top bottom", end: "bottom top", scrub: 0.8 }
+        });
+      });
+
+      /* Text lifts in like paper */
+      ScrollTrigger.batch("[data-reveal]", {
+        start: "top 90%", once: true,
+        onEnter: (batch) => gsap.fromTo(batch,
+          { autoAlpha: 0, y: 40, rotationX: -18, transformPerspective: 800, transformOrigin: "50% 100%" },
+          { autoAlpha: 1, y: 0, rotationX: 0, duration: 1.1, ease: "power3.out", stagger: 0.12, clearProps: "transform" })
+      });
+
+      /* Cards are dealt one after another */
+      ScrollTrigger.batch("[data-card]", {
+        start: "top 92%", once: true,
+        onEnter: (batch) => gsap.fromTo(batch,
+          { autoAlpha: 0, y: 70, rotation: (i) => (i % 2 ? 4 : -4), scale: 0.94 },
+          { autoAlpha: 1, y: 0, rotation: 0, scale: 1, duration: 1.0, ease: "back.out(1.4)", stagger: 0.15, clearProps: "transform" })
+      });
+
+      /* Scalloped edges slide apart to sell the layered depth */
+      gsap.utils.toArray(".details, .closing").forEach((sec) => {
+        gsap.from(sec.querySelectorAll(".edge"), {
+          y: (i) => (3 - i) * 22, ease: "none",
+          scrollTrigger: { trigger: sec, start: "top bottom", end: "top 35%", scrub: 0.6 }
+        });
+      });
+
+      /* Dividers open from the centre */
+      gsap.utils.toArray(".divider").forEach((d) => {
+        gsap.from(d, { scaleX: 0, duration: 1.2, ease: "power3.out", scrollTrigger: { trigger: d, start: "top 90%", once: true } });
+      });
+
+      /* Arch: frame settles while the rings rise and turn into the opening */
+      gsap.timeline({ scrollTrigger: { trigger: ".arch", start: "top 88%", end: "center 50%", scrub: 0.8 } })
+        .from(".arch__frame", { scale: 0.88, y: 60, ease: "none" }, 0)
+        .from(".arch__window", { autoAlpha: 0, scale: 0.85, ease: "none" }, 0)
+        .from(".arch__window img", { scale: 1.4, transformOrigin: "50% 100%", ease: "none" }, 0.1);
+
+      /* Closing scene builds back to front, then the plants keep a slow breeze */
+      gsap.timeline({
+        defaults: { ease: "power3.out" },
+        scrollTrigger: { trigger: ".scene", start: "top 80%", once: true },
+        onComplete: () => gsap.to(".scene__plant", { rotation: (i) => (i ? -1.5 : 1.5), duration: 4, ease: "sine.inOut", repeat: -1, yoyo: true })
+      })
+        .from(".scene__plant--left", { xPercent: -40, rotation: -6, autoAlpha: 0, duration: 1.2 }, 0)
+        .from(".scene__plant--right", { xPercent: 40, rotation: 6, autoAlpha: 0, duration: 1.2 }, 0)
+        .from(".scene__pooja", { y: 50, autoAlpha: 0, duration: 1.1 }, 0.25)
+        .from(".scene__couple", { y: 80, autoAlpha: 0, duration: 1.3, ease: "back.out(1.1)" }, 0.5);
+
+      /* Footer names are written in */
+      gsap.fromTo(".footer__names",
+        { clipPath: "inset(-30% 100% -30% -10%)" },
+        { clipPath: "inset(-30% -10% -30% -10%)", duration: 1.6, ease: "power2.inOut",
+          scrollTrigger: { trigger: ".footer", start: "top 95%", once: true } });
+
+      ScrollTrigger.refresh();
+    });
+  })();
+  </script>
+</body>
+</html>
